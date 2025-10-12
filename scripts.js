@@ -56,9 +56,9 @@ document.getElementById("videoPlayer").addEventListener("ended", () => {
 function initializeSwipe() {
   const container = document.querySelector(".cards-wrapper");
   const indicators = document.querySelectorAll(".indicator");
-  let startX;
-  let currentX;
-  let isPressed = false;
+  let startX = 0;
+  let currentX = 0;
+  let isSwiping = false;
   let currentCard = 0;
 
   function updateIndicators(index) {
@@ -75,28 +75,31 @@ function initializeSwipe() {
   }
 
   container.addEventListener("touchstart", (e) => {
+    if (e.touches.length > 1) return; // Ignore multi-touch gestures
     startX = e.touches[0].clientX;
-    isPressed = true;
+    isSwiping = true;
+    container.style.transition = "none"; // Disable transition during swipe
   });
 
   container.addEventListener("touchmove", (e) => {
-    if (!isPressed) return;
-    e.preventDefault();
+    if (!isSwiping || e.touches.length > 1) return; // Ignore if not swiping or multi-touch
     currentX = e.touches[0].clientX;
     const diff = startX - currentX;
-    const percentMove = (diff / window.innerWidth) * 100;
+    const offset = -(currentCard * 100 + (diff / window.innerWidth) * 100);
 
+    // Constrain swipe within bounds
     if ((currentCard === 0 && diff < 0) || (currentCard === 1 && diff > 0)) {
       return;
     }
 
-    const offset = -(currentCard * 100 + percentMove);
     container.style.transform = `translateX(${offset}%)`;
   });
 
-  container.addEventListener("touchend", (e) => {
-    if (!isPressed) return;
-    isPressed = false;
+  container.addEventListener("touchend", () => {
+    if (!isSwiping) return;
+    isSwiping = false;
+    container.style.transition = "transform 0.3s ease-out"; // Re-enable transition
+
     const diff = startX - currentX;
     const threshold = window.innerWidth * 0.2;
 
