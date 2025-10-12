@@ -41,10 +41,6 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
-
 main {
   padding: 20px;
 }
@@ -125,11 +121,6 @@ h2 {
   border-radius: 10px;
   background: #f8f9fa;
   transition: transform 0.2s;
-}
-
-.feature-item:hover {
-  transform: translateY(-2px);
-  background: #e9ecef;
 }
 
 .feature-item h4 {
