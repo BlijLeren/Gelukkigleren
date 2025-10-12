@@ -8,8 +8,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
   padding: 0 20px;
   background-color: #208285;
   color: white;
