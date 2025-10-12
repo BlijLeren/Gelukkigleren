@@ -85,13 +85,13 @@ function initializeSwipe() {
     if (!isSwiping || e.touches.length > 1) return; // Ignore if not swiping or multi-touch
     currentX = e.touches[0].clientX;
     const diff = startX - currentX;
-    const offset = -(currentCard * 100 + (diff / window.innerWidth) * 100);
 
-    // Constrain swipe within bounds
+    // Constrain swipe strictly within bounds
     if ((currentCard === 0 && diff < 0) || (currentCard === 1 && diff > 0)) {
       return;
     }
 
+    const offset = -(currentCard * 100 + (diff / window.innerWidth) * 100);
     container.style.transform = `translateX(${offset}%)`;
   });
 
