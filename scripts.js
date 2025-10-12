@@ -132,3 +132,7 @@ document.addEventListener("touchend", (event) => {
   }
   lastTouchEnd = now;
 });
+
+document.addEventListener("gesturestart", (e) => e.preventDefault()); // Prevent pinch-to-zoom
+document.addEventListener("gesturechange", (e) => e.preventDefault());
+document.addEventListener("gestureend", (e) => e.preventDefault());
