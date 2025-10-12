@@ -1,0 +1,54 @@
+{
+  "Structuur & planning": {
+    "Regulier": "Duidelijke planning, vaste lessen en vakken",
+    "Agora": "Duidelijke planning, maar vrijheid met invulling van deze tijd"
+  },
+  "Tempo & keuzes": {
+    "Regulier": "Zelfde tempo voor iedereen",
+    "Agora": "Leren op eigen tempo"
+  },
+  "Leerdoelen & opdrachten": {
+    "Regulier": "Vaste doelen en opdrachten",
+    "Agora": "Persoonlijke leerdoelen en vraagstellingen"
+  },
+  "Evaluatie & Feedback": {
+    "Regulier": "Cijfers en toetsen",
+    "Agora": "Feedback en reflectie"
+  },
+  "Projecten & toepassing": {
+    "Regulier": "Vaste opdrachten / projecten binnen vakken",
+    "Agora": "Projectgericht exploratief leren"
+  },
+  "Nieuwsgierigheid & initiatief": {
+    "Regulier": "Nieuwsgierigheid binnen vaste lesstof",
+    "Agora": "Ruimte voor eigen initiatief en creativiteit"
+  },
+  "Ondersteuning & begeleiding": {
+    "Regulier": "Ondersteuning via docent of mentor",
+    "Agora": "1-op-1 begeleiding door coach"
+  },
+  "Samenwerking & sociaal leren": {
+    "Regulier": "Samenwerken bij groepsopdrachten binnen vakken",
+    "Agora": "Samenwerken en elkaar helpen bij eigen projecten en vraagstukken"
+  },
+  "Zelfstandigheid & keuzes": {
+    "Regulier": "Binnen structuur",
+    "Agora": "Eigen keuzes onder begeleiding"
+  },
+  "Kritisch denken & probleemoplossing": {
+    "Regulier": "Binnen kaders denken van opdrachten in de les",
+    "Agora": "Bij projecten en vraagstukken actief onderzoeken en kritisch denken over informatie"
+  },
+  "Reflectie & zelfinzicht": {
+    "Regulier": "Soms reflecteren via toetsen/feedback",
+    "Agora": "Regelmatig reflecteren bij projecten & feedbackmomenten"
+  },
+  "Balans structuur vs vrijheid": {
+    "Regulier": "Zelfstandig werken binnen vakken",
+    "Agora": "Voornamelijk vrijheid met ondersteuning"
+  },
+  "Voortgang & inzicht": {
+    "Regulier": "Cijferlijsten, rapporten en mentorgesprekken",
+    "Agora": "Overzicht van vaardigheden, vooruitgang en ontwikkelingen op diverse gebieden"
+  }
+}

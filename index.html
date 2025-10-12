@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welkom</h1>
+      <button id="playVideoButton">Play Video</button>
+    </header>
+    <main>
+      <section id="videoSection">
+        <video id="videoPlayer" controls>
+          <source src="bloem_animatie.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <h2>Wat past bij jouw kind?</h2>
+
+      <div class="centerer">
+        <section id="comparisonSection">
+          <div class="comparison-container">
+            <p class="swipe-hint">← Swipe links of rechts →</p>
+            <div class="cards-wrapper">
+              <div class="plan-card regulier">
+                <h3>Regulier Onderwijs</h3>
+                <div class="plan-features">
+                  <!-- Will be populated by JavaScript -->
+                </div>
+              </div>
+              <div class="plan-card agora">
+                <h3>Agora Onderwijs</h3>
+                <div class="plan-features">
+                  <!-- Will be populated by JavaScript -->
+                </div>
+              </div>
+            </div>
+            <div class="swipe-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="enquete">
+        <h3>Mag ik je nog even iets vragen?</h3>
+        <p>
+          Deze Onderwijs-Gelukswijzer is onderdeel van mijn afstudeerproject.
+          Als jullie een momentje hebben om een paar korte vragen te
+          beantwoorden, zou ik daar enorm dankbaar voor zijn! <br />
+          <a class="glink" href="hhttps://forms.gle/StpSQyRLwYMkE6tu5"
+            >Google forms link</a
+          >
+        </p>
+      </div>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

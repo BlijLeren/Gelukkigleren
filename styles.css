@@ -1,0 +1,282 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #208285;
+  color: white;
+  overflow-y: auto; /* Ensure body scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  height: 80svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #145553;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+main {
+  padding: 20px;
+}
+
+#videoSection {
+  text-align: center;
+  margin: 20px 0;
+  margin-bottom: 100px;
+}
+
+video {
+  max-width: 90vw; /* Allow the width to adjust automatically */
+  height: 80vh; /* Set the height to fill the container */
+  max-height: 80vh; /* Limit the height to 1920px */
+  aspect-ratio: 9 / 16; /* Enforce a vertical aspect ratio (1080x1920) */
+  display: block;
+  border-radius: 20px;
+}
+
+.centerer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#comparisonSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px auto;
+  padding: 0;
+}
+
+.comparison-container {
+  display: flex; /* Use flexbox to align options horizontally */
+  justify-content: center;
+  align-items: center;
+  /* Verberg inhoud buiten de container */
+  width: 80%;
+}
+
+.cards-wrapper {
+  display: flex; /* Zorg ervoor dat de kaarten naast elkaar staan */
+  flex-wrap: nowrap; /* Voorkom dat de kaarten naar een nieuwe regel gaan */
+  width: 90%; /* Maak ruimte voor beide kaarten */
+  transition: transform 0.3s ease-out; /* Voeg een soepele overgang toe */
+}
+
+.plan-card {
+  flex: 0 0 50%; /* Elke kaart neemt 50% van de breedte in */
+  max-width: 50%; /* Beperk de maximale breedte tot 50% */
+  margin-bottom: 20px; /* Add spacing between cards */
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  color: #333;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: visible; /* Ensure content is fully visible */
+}
+
+.plan-card h3 {
+  color: #145553;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.feature-item {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  background: #f8f9fa;
+  transition: transform 0.2s;
+}
+
+.feature-item:hover {
+  transform: translateY(-2px);
+  background: #e9ecef;
+}
+
+.feature-item h4 {
+  color: #145553;
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.feature-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 25px;
+  margin: 20px 0;
+  background: white;
+  color: black;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  min-width: 150px;
+}
+
+th {
+  background-color: #145553;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.swipe-indicators {
+  display: none; /* Hide swipe indicators since swipe is no longer needed */
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background: white;
+}
+
+.swipe-hint {
+  color: white;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  display: none; /* Hide swipe hint since swipe is no longer needed */
+}
+
+.glink {
+  color: #ffbf00;
+  -webkit-text-fill-color: #ffbf00;
+}
+
+.glink:visited {
+  color: #ffbf00;
+  -webkit-text-fill-color: #ffbf00;
+}
+
+.glink:link {
+  color: #ffbf00;
+  -webkit-text-fill-color: #ffbf00;
+}
+
+.enquete {
+  background-color: #145553;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.enquete h3 {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  #comparisonSection {
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    min-width: 120px;
+  }
+
+  .plan-card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .feature-item {
+    padding: 12px;
+  }
+
+  .comparison-container {
+    flex-direction: column; /* Stack options vertically on smaller screens */
+    gap: 20px;
+  }
+
+  .plan-card {
+    flex: 0 0 100%; /* Elke kaart neemt de volledige breedte in op kleinere schermen */
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .swipe-indicators {
+    display: flex;
+    margin: 15px 0;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swipe-hint {
+    display: none; /* Hide swipe hint since swipe is no longer needed */
+  }
+}
