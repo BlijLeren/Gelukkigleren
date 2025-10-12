@@ -93,6 +93,7 @@ h2 {
   flex-wrap: nowrap; /* Voorkom dat de kaarten naar een nieuwe regel gaan */
   width: 90%; /* Maak ruimte voor beide kaarten */
   transition: transform 0.3s ease-out; /* Voeg een soepele overgang toe */
+  touch-action: pan-y; /* Allow horizontal swipes */
 }
 
 .plan-card {
