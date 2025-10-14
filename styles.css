@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
   max-width: 100%;
   padding: 0 20px;
-  background-color: #208285;
+  background-color: #329a9d;
   color: white;
   overflow-y: auto; /* Ensure body scrolling */
   touch-action: manipulation; /* Prevent double-tap zoom */
@@ -48,10 +48,29 @@ main {
   padding: 20px;
 }
 
+.backgroundflower {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  z-index: -200;
+  width: 100vw;
+}
+
+#Layer_2 {
+  position: fixed;
+  z-index: -100;
+}
+
 #videoSection {
   text-align: center;
   margin: 20px 0;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 video {
