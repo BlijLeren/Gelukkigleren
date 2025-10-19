@@ -1,6 +1,6 @@
 html,
 body {
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 
 body {
@@ -12,8 +12,8 @@ body {
   padding: 0 20px;
   background-color: #329a9d;
   color: white;
-  overflow-y: auto; /* Ensure body scrolling */
-  touch-action: manipulation; /* Prevent double-tap zoom */
+  overflow-y: auto;
+  touch-action: manipulation;
 }
 
 header {
@@ -74,10 +74,10 @@ main {
 }
 
 video {
-  max-width: 90vw; /* Allow the width to adjust automatically */
-  height: 80vh; /* Set the height to fill the container */
-  max-height: 80vh; /* Limit the height to 1920px */
-  aspect-ratio: 9 / 16; /* Enforce a vertical aspect ratio (1080x1920) */
+  max-width: 90vw;
+  height: 80vh;
+  max-height: 80vh;
+  aspect-ratio: 9 / 16;
   display: block;
   border-radius: 20px;
 }
@@ -103,7 +103,7 @@ h2 {
 }
 
 .comparison-container {
-  display: flex; /* Use flexbox to align options horizontally */
+  display: flex;
   justify-content: center;
   align-items: center;
   /* Verberg inhoud buiten de container */
@@ -111,24 +111,24 @@ h2 {
 }
 
 .cards-wrapper {
-  display: flex; /* Zorg ervoor dat de kaarten naast elkaar staan */
-  flex-wrap: nowrap; /* Voorkom dat de kaarten naar een nieuwe regel gaan */
-  width: 90%; /* Maak ruimte voor beide kaarten */
-  transition: transform 0.3s ease-out; /* Voeg een soepele overgang toe */
-  touch-action: pan-y pinch-zoom; /* Prevent zooming while allowing vertical scrolling */
+  display: flex;
+  flex-wrap: nowrap;
+  width: 90%;
+  transition: transform 0.3s ease-out;
+  touch-action: pan-y pinch-zoom;
 }
 
 .plan-card {
-  flex: 0 0 50%; /* Elke kaart neemt 50% van de breedte in */
-  max-width: 50%; /* Beperk de maximale breedte tot 50% */
-  margin-bottom: 20px; /* Add spacing between cards */
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-bottom: 20px;
   padding: 20px;
   background: white;
   border-radius: 20px;
   color: #333;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  overflow: visible; /* Ensure content is fully visible */
+  overflow: visible;
 }
 
 .plan-card h3 {
@@ -185,7 +185,7 @@ tr:nth-child(even) {
 }
 
 .swipe-indicators {
-  display: none; /* Hide swipe indicators since swipe is no longer needed */
+  display: none;
   justify-content: center;
   gap: 8px;
   margin-top: 20px;
@@ -208,7 +208,7 @@ tr:nth-child(even) {
   margin: 10px 0;
   font-size: 0.9rem;
   opacity: 0.8;
-  display: none; /* Hide swipe hint since swipe is no longer needed */
+  display: none;
 }
 
 .glink {
@@ -271,12 +271,12 @@ tr:nth-child(even) {
   }
 
   .comparison-container {
-    flex-direction: column; /* Stack options vertically on smaller screens */
+    flex-direction: column;
     gap: 20px;
   }
 
   .plan-card {
-    flex: 0 0 100%; /* Elke kaart neemt de volledige breedte in op kleinere schermen */
+    flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 0;
   }
@@ -292,6 +292,6 @@ tr:nth-child(even) {
   }
 
   .swipe-hint {
-    display: none; /* Hide swipe hint since swipe is no longer needed */
+    display: none;
   }
 }
